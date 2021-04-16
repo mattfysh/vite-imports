@@ -6,6 +6,8 @@ To setup, run `npm install`. If making any changes to `/dep` be sure to run `npm
 
 ## Graph A
 
+The project directly imports dynamic & worker scripts nested within the `dep` pkg.
+
 **dev mode**
 
 `npm run devA`
@@ -19,6 +21,8 @@ To setup, run `npm install`. If making any changes to `/dep` be sure to run `npm
 * worker script is loaded into main thread (`window.onmessage` is defined)
 
 ## Graph B
+
+The project imports the `dep` pkg, which in turn imports dynamic & worker scripts
 
 **dev mode**
 
