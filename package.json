@@ -1,0 +1,19 @@
+{
+  "name": "vite-imports",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "sh scripts/plant_dep.sh",
+    "devA": "vite graphA --open --force",
+    "prodA": "vite build graphA && vite preview graphA --open",
+    "devB": "vite graphB --open --force",
+    "prodB": "vite build graphB && vite preview graphB --open"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "vite": "^2.1.5"
+  }
+}
